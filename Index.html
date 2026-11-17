@@ -35,7 +35,7 @@
   @media all{
     body{display:block;background:#fff}
     .phone{width:100%;height:100vh;height:100dvh;border-radius:0;box-shadow:none}
-    :root{--sat:env(safe-area-inset-top,0px);--sab:max(env(safe-area-inset-bottom,0px),6px);--navgap:20px}   /* --navgap: extra room between the bottom nav and the iPhone home bar */
+    :root{--sat:env(safe-area-inset-top,0px);--sab:max(calc(env(safe-area-inset-bottom,0px) - 8px),6px);--navgap:0px}   /* bottom bars sit on the device's own safe area, like a native tab bar: labels end at the home-bar zone, 6px floor on Android */
     .ios-sb,.home-ind i,.ind{display:none}
     .phone #flList{min-height:calc(100dvh - var(--sat) - 110px)}
     .phone .header,.phone .home-head{background-position:0 -40px;background-color:#0a2fe6}
